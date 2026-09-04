@@ -190,6 +190,7 @@ a{color:inherit;text-decoration:none}
 .pub-logo{display:grid;place-items:center;width:48px;height:48px;flex:none}
 .pub-logo img{max-height:100%;max-width:100%;object-fit:contain;border-radius:50%}
 .pub-logo img[src*="crossref"]{border-radius:0}
+.pub-logo .pubpub-mark{border-radius:0;max-height:44px;width:auto}
 .pub-eyebrow{
   display:block;font-size:9px;font-weight:600;letter-spacing:.22em;
   text-transform:uppercase;color:var(--muted-foreground);
