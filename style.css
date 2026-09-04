@@ -667,3 +667,62 @@ img { max-width: 100%; display: block; }
   .partner-card { padding: 1.6rem; }
   .error-card { padding: 2.25rem 1.4rem; }
 }
+
+
+.brand-logo {
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.proof-logo-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  margin-bottom: 0.7rem;
+}
+
+.proof-logo {
+  display: block;
+  max-width: 140px;
+  width: auto;
+  height: 34px;
+  object-fit: contain;
+}
+
+.seal-logo {
+  width: 40px;
+  height: 40px;
+  max-width: none;
+  border-radius: 50%;
+}
+
+.crossref-proof-logo {
+  height: 28px;
+}
+
+.standard-logo-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  margin-bottom: 0.9rem;
+}
+
+.standard-logo {
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.crossref-logo {
+  height: 32px;
+}
