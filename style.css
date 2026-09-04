@@ -633,3 +633,8 @@ a{color:inherit;text-decoration:none}
   .marquee-track{animation:none}
   .featured,.pcard,.btn{transition:none}
 }
+
+.pub-logo img{display:block;max-width:100%;height:auto}
+.coop-unit .pub-logo img{max-height:52px;width:auto}
+.coop-unit:nth-child(2) .pub-logo img{max-height:34px}
+.coop-unit:nth-child(3) .pub-logo img{max-height:44px}
