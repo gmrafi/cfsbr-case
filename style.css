@@ -677,3 +677,11 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 1180px){
   .brand-sub{font-size:9px;letter-spacing:.02em}
 }
+
+.pub-right-cluster{gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.pub-mini-partner{gap:10px}
+.pub-logo-github{width:74px;height:36px}
+.pub-logo .github-mark{border-radius:0;max-height:24px;width:auto}
+@media(max-width:980px){
+  .pub-right-cluster{justify-content:flex-start}
+}
