@@ -638,3 +638,26 @@ a{color:inherit;text-decoration:none}
 .coop-unit .pub-logo img{max-height:52px;width:auto}
 .coop-unit:nth-child(2) .pub-logo img{max-height:34px}
 .coop-unit:nth-child(3) .pub-logo img{max-height:44px}
+
+/* Knowledge Futures and footer refinement */
+.trust-logos{grid-template-columns:repeat(auto-fit,minmax(132px,1fr));align-items:end}
+.trust-item-kf img{height:22px;width:auto;max-width:100%;object-fit:contain}
+.trust-item figcaption{font-size:11px;font-weight:600;color:var(--foreground);opacity:.78}
+.pub-eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--primary)}
+.pub-name{font-size:18px;font-weight:700;color:var(--foreground);letter-spacing:0}
+.pub-role,.coop-role,.foot-sub,.foot-mono,.foot-note{color:var(--foreground);opacity:.8}
+.pub-mid{color:var(--foreground);opacity:.88}
+.foot-grid-expanded{grid-template-columns:1.05fr 1.2fr 1fr}
+.foot-note{margin:8px 0 14px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.foot-directory li,.foot-contact li{display:flex;flex-direction:column;gap:4px;padding:10px 0;border-bottom:1px solid rgba(232,237,240,.9)}
+.foot-directory li:last-child,.foot-contact li:last-child{border-bottom:none}
+.foot-directory span,.foot-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--foreground);opacity:.72}
+.foot-directory a,.foot-contact a,.foot-contact strong{font-size:15px;font-weight:600;color:var(--foreground)}
+.foot-contact a{display:block;width:fit-content}
+.foot-base{row-gap:10px}
+.coop-unit:nth-child(3) .pub-logo{background:transparent;border-color:transparent;box-shadow:none;padding:0}
+.coop-unit:nth-child(3) .pub-logo img{border-radius:0;max-height:42px}
+@media (max-width: 767px){
+  .foot-grid-expanded{grid-template-columns:1fr}
+  .trust-logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
