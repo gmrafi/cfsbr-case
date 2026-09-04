@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="assets/cfsbr-seal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -44,31 +44,40 @@
 
 <main id="top">
 
-  <!-- Hero: single-column centered (no-cover branch, as per original system) -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-meta">
-        <span>DOI Prefix <b>10.67226</b></span><span class="dot">·</span>
-        <span>Vol 01</span><span class="dot">·</span>
-        <span>Issue 01</span><span class="dot">·</span>
-        <span>2026</span>
+  <!-- Hero: original two-column branch retained, cover slot kept blank for future artwork -->
+  <section class="hero hero-split">
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <div class="hero-meta">
+          <span>DOI Prefix <b>10.67226</b></span><span class="dot">·</span>
+          <span>Vol 01</span><span class="dot">·</span>
+          <span>Issue 01</span><span class="dot">·</span>
+          <span>2026</span>
+        </div>
+        <h1 class="hero-title">CFSBR C.A.S.E.</h1>
+        <div class="hero-seriesline">
+          <span class="rule"></span>
+          <span class="series-label">Class Assignment Series · Edition</span>
+          <span class="rule mobile-only"></span>
+        </div>
+        <p class="hero-tagline">From classroom to citeable publication — outstanding undergraduate coursework, editorially screened and preserved as permanent, DOI-backed scholarly records.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission%20—%20Vol%201%20Issue%201">Submit Assignment</a>
+          <a class="btn btn-outline" href="https://case.pubpub.org/" target="_blank" rel="noopener">Read Issue 01</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><div class="hstat-n">06</div><div class="hstat-l">Issues a Year</div></div>
+          <div class="hstat"><div class="hstat-n">02</div><div class="hstat-l">Publication Tiers</div></div>
+          <div class="hstat"><div class="hstat-n">01</div><div class="hstat-l">Inaugural Issue</div></div>
+        </div>
       </div>
-      <h1 class="hero-title">CFSBR C.A.S.E.</h1>
-      <div class="hero-seriesline">
-        <span class="rule"></span>
-        <span class="series-label">Class Assignment Series · Edition</span>
-        <span class="rule"></span>
-      </div>
-      <p class="hero-tagline">From classroom to citeable publication — outstanding undergraduate coursework, editorially screened and preserved as permanent, DOI-backed scholarly records.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-solid" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission%20—%20Vol%201%20Issue%201">Submit Assignment</a>
-        <a class="btn btn-outline" href="https://case.pubpub.org/" target="_blank" rel="noopener">Read Issue 01</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hstat"><div class="hstat-n">06</div><div class="hstat-l">Issues a Year</div></div>
-        <div class="hstat"><div class="hstat-n">02</div><div class="hstat-l">Publication Tiers</div></div>
-        <div class="hstat"><div class="hstat-n">01</div><div class="hstat-l">Inaugural Issue</div></div>
-      </div>
+      <aside class="hero-cover-slot" aria-label="Reserved cover page slot">
+        <div class="cover-placeholder">
+          <div class="cover-placeholder-inner"></div>
+          <div class="cover-dots"><span class="cover-dot active"></span><span class="cover-dot"></span></div>
+          <figcaption class="cover-caption">Cover page <span>(coming soon)</span></figcaption>
+        </div>
+      </aside>
     </div>
   </section>
 
