@@ -1,43 +1,40 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const siteNav = document.querySelector('.site-nav');
-const navLinks = document.querySelectorAll('.site-nav a');
-const revealItems = document.querySelectorAll('.reveal');
+// CFSBR C.A.S.E. — interactions
+(function () {
+  "use strict";
 
-if (menuToggle && siteNav) {
-  menuToggle.addEventListener('click', () => {
-    const open = siteNav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      siteNav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('menu-open');
+  // Mobile nav toggle
+  var toggle = document.getElementById("navToggle");
+  var nav = document.getElementById("mainNav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-  });
-
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 860) {
-      siteNav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('menu-open');
-    }
-  });
-}
-
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+    nav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     });
-  }, { threshold: 0.16 });
+  }
 
-  revealItems.forEach((item) => observer.observe(item));
-} else {
-  revealItems.forEach((item) => item.classList.add('visible'));
-}
+  // Scroll reveal
+  var targets = document.querySelectorAll(
+    ".pillar-card, .paper-card, .flow-card, .about-inner, .cover-card, .hero-copy, .scope-copy, .scope-bars, .cta-inner"
+  );
+  targets.forEach(function (el) { el.classList.add("reveal"); });
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    targets.forEach(function (el) { io.observe(el); });
+  } else {
+    targets.forEach(function (el) { el.classList.add("in"); });
+  }
+})();
