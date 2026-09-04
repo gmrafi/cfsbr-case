@@ -20,8 +20,8 @@
   --border:#e8edf0;                                       /* oklch(0.91 0.01 240) */
   --card:#ffffff;
   --radius:1rem;
-  --font-display:"Cormorant Garamond",Georgia,serif;
-  --font-body:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --font-display:"Source Serif 4",ui-serif,Georgia,Cambria,"Times New Roman",serif;
+  --font-body:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 
@@ -75,6 +75,7 @@ a{color:inherit;text-decoration:none}
   font-family:var(--font-display);font-weight:700;font-size:22px;
   letter-spacing:.04em;color:var(--foreground);
 }
+.brand-word em{font-style:normal;color:var(--primary)}
 .nav{display:flex;align-items:center;gap:32px}
 .nav a{font-size:14px;font-weight:500;color:rgba(28,43,70,.8);transition:color .15s}
 .nav a:hover{color:var(--primary)}
@@ -222,6 +223,43 @@ a{color:inherit;text-decoration:none}
 }
 .mq-star{color:var(--accent);font-size:12px}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- trusted infrastructure band (from open.cfsbr.com) ---------- */
+.trustband{
+  border-bottom:1px solid var(--border);background:var(--background);
+}
+.trustband-inner{
+  max-width:1152px;margin:0 auto;
+  padding:28px 32px 32px;
+  border:1px solid var(--border);border-top:0;
+  border-radius:0 0 16px 16px;
+}
+.trust-head{
+  display:flex;align-items:center;gap:16px;
+  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted-foreground);
+}
+.trust-rule{height:1px;flex:1;background:var(--border)}
+.trust-logos{
+  margin-top:20px;display:grid;grid-template-columns:repeat(5,1fr);
+  gap:20px;align-items:start;
+}
+.trust-item{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}
+.trust-item img{
+  height:34px;width:auto;max-width:100%;object-fit:contain;
+}
+.trust-item figcaption{
+  font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--muted-foreground);
+}
+@media(max-width:900px){
+  .trust-logos{grid-template-columns:repeat(3,1fr);gap:24px 20px}
+}
+@media(max-width:560px){
+  .trustband-inner{padding:24px 20px 28px}
+  .trust-logos{grid-template-columns:repeat(2,1fr)}
+  .trust-item img{height:28px}
+}
 
 /* ---------- generic section ---------- */
 .section{padding:64px 20px}
