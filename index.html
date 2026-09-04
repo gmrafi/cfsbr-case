@@ -1,221 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CFSBR C.A.S.E. · Class Assignment Series · Edition</title>
-  <meta name="description" content="C.A.S.E. transforms outstanding undergraduate coursework into permanent, DOI-backed scholarly records published by CFSBR and archived on PubPub.">
-  <link rel="icon" type="image/png" href="assets/cfsbr-seal.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFSBR C.A.S.E. · Class Assignment Series · Edition</title>
+<meta name="description" content="C.A.S.E. — the Class Assignment Series · Edition: faculty-governed, DOI-registered undergraduate coursework, published by CFSBR and archived open access on PubPub.">
+<link rel="icon" type="image/png" href="assets/cfsbr-seal.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a href="#top" class="mini-brand">
-        <img src="assets/cfsbr-seal.png" alt="CFSBR seal">
-        <span>CFSBR C.A.S.E.</span>
-      </a>
-      <nav class="topnav" id="topnav">
-        <a href="#about">About</a>
-        <a href="#scope">Scope</a>
-        <a href="#papers">Papers</a>
-        <a href="#workflow">Workflow</a>
-        <a href="https://case.pubpub.org/" target="_blank" rel="noopener">Archive ↗</a>
-        <a class="nav-btn" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission">Submit</a>
-      </nav>
+
+<!-- Prototype banner -->
+<div class="proto-banner" id="protoBanner">
+  <span class="proto-tag">Launch</span>
+  <span>Vol 1 · Issue 1 arrives July 2026 — submissions close 15–20 June 2026.</span>
+  <button class="proto-close" id="protoClose" aria-label="Dismiss notice">✕</button>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="CFSBR · C.A.S.E. · Home">
+      <span class="brand-logo"><img src="assets/cfsbr-seal.png" alt="CFSBR" title="Centre for Fintech and Strategic Business Research"></span>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <span class="brand-word">C.A.S.E.</span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#papers">Papers</a>
+      <a href="#board">Masthead</a>
+      <a href="#submit">Submit</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-solid btn-sm" href="#submit">Submit Assignment</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="hero-pre">Prototype · This front-end is the institutional presentation layer for the upcoming CFSBR C.A.S.E. archive.</p>
-          <p class="hero-meta">Crossref Prefix 10.67226 · Vol 01 · Issue 01 · 2026</p>
-          <h1>C.A.S.E.</h1>
-          <p class="hero-sub">Class Assignment Series · Edition</p>
-          <p class="hero-lede">Where high-impact undergraduate coursework becomes permanent, DOI-backed scholarship — editorially screened, openly archived, and ready to cite.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission%20for%20Vol%201%20Issue%201">Submit Assignment</a>
-            <a class="btn btn-secondary" href="https://case.pubpub.org/" target="_blank" rel="noopener">Browse Archive</a>
-          </div>
-          <div class="hero-stats">
-            <article><strong>06</strong><span>Issues Per Year</span></article>
-            <article><strong>02</strong><span>Publication Tiers</span></article>
-            <article><strong>01</strong><span>Inaugural Issue</span></article>
-          </div>
-        </div>
-        <aside class="hero-panel">
-          <div class="cover-card">
-            <div class="cover-head">
-              <span class="issue-pill">Vol 01 · Issue 01</span>
-              <span class="year-pill">2026</span>
-            </div>
-            <div class="cover-mark">
-              <img src="assets/cfsbr-seal.png" alt="CFSBR seal">
-              <div class="case-mark">C.A.S.E.</div>
-            </div>
-            <h2>From Classroom<br>to Citeable<br>Publication</h2>
-            <p class="cover-copy">Bi-monthly student-edition scholarly series for fintech, strategy, analytics, and applied research from the Global South.</p>
-            <div class="cover-points">
-              <span>DOI Registration</span>
-              <span>PubPub Archive</span>
-              <span>ORCID Support</span>
-              <span>CC BY-NC 4.0</span>
-            </div>
-            <div class="cover-foot">10.67226/case.2026.01.001</div>
-          </div>
-        </aside>
-      </div>
-    </section>
+<main id="top">
 
-    <section class="publisher-band">
-      <div class="wrap publisher-grid">
-        <div class="publisher-unit">
-          <img src="assets/cfsbr-seal.png" alt="CFSBR seal">
-          <div>
-            <small>Published by</small>
-            <strong>Centre for Fintech &amp; Strategic Business Research</strong>
-          </div>
-        </div>
-        <div class="publisher-note">Under the CFSBR scholarly publishing framework</div>
-        <div class="publisher-unit right">
-          <div>
-            <small>DOI Registration</small>
-            <strong>Crossref Member · Prefix 10.67226</strong>
-          </div>
-          <img class="crossref-logo" src="assets/crossref.png" alt="Crossref logo">
-        </div>
+  <!-- Hero: single-column centered (no-cover branch, as per original system) -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-meta">
+        <span>DOI Prefix <b>10.67226</b></span><span class="dot">·</span>
+        <span>Vol 01</span><span class="dot">·</span>
+        <span>Issue 01</span><span class="dot">·</span>
+        <span>2026</span>
       </div>
-    </section>
-
-    <section class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <span>Student Edition Scholarship ★ Editorial Screening ★ Crossref DOI ★ Google Scholar ★ OAI-PMH ★ PubPub Archive ★ Open Access ★ Portfolio-ready Records ★</span>
-        <span>Student Edition Scholarship ★ Editorial Screening ★ Crossref DOI ★ Google Scholar ★ OAI-PMH ★ PubPub Archive ★ Open Access ★ Portfolio-ready Records ★</span>
+      <h1 class="hero-title">CFSBR C.A.S.E.</h1>
+      <div class="hero-seriesline">
+        <span class="rule"></span>
+        <span class="series-label">Class Assignment Series · Edition</span>
+        <span class="rule"></span>
       </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="wrap intro narrow">
-        <p class="label">About the Series</p>
-        <h2>Where coursework becomes a permanent record</h2>
-        <p class="lead">C.A.S.E. is a bi-monthly scholarly series designed to publish outstanding undergraduate assignments that are too good to disappear after grading. It turns classroom work into lasting academic output with editorial screening, structured metadata, and public discoverability.</p>
-        <p class="lead">Every accepted piece is prepared with author information, ORCID support, and references, assigned a Crossref DOI under prefix 10.67226, and archived on PubPub under a CC BY-NC 4.0 license. Students leave with a citable artifact for portfolios, scholarships, graduate admissions, and future research trajectories.</p>
+      <p class="hero-tagline">From classroom to citeable publication — outstanding undergraduate coursework, editorially screened and preserved as permanent, DOI-backed scholarly records.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission%20—%20Vol%201%20Issue%201">Submit Assignment</a>
+        <a class="btn btn-outline" href="https://case.pubpub.org/" target="_blank" rel="noopener">Read Issue 01</a>
       </div>
-    </section>
-
-    <section class="scope" id="scope">
-      <div class="wrap">
-        <div class="section-head narrow-left">
-          <p class="label">Scope of the Series</p>
-          <h2>What we publish</h2>
-          <p class="section-copy">C.A.S.E. focuses on high-quality undergraduate work that is evidence-driven, clearly structured, and useful beyond the classroom. The submission language can evolve later — the design system and section grammar come first.</p>
-          <p class="scope-ratio">40% Fintech &amp; Digital Finance · 30% Strategy &amp; Market Reports · 30% Analytics &amp; Sustainable Finance</p>
-        </div>
-        <div class="topic-grid">
-          <article class="topic-card"><span>01</span><h3>FinTech &amp; Digital Financial Services</h3><p>Mobile financial services, digital payments, inclusion, remittance systems, platform finance, and financial infrastructure.</p></article>
-          <article class="topic-card"><span>02</span><h3>Business Strategy &amp; Market Reports</h3><p>Industry analyses, strategic positioning, competitor review, market entry, and policy-linked business writing.</p></article>
-          <article class="topic-card"><span>03</span><h3>Business Analytics &amp; Decision Intelligence</h3><p>Applied analytics, dashboards, data interpretation, survey-based reports, visualization, and managerial insight generation.</p></article>
-          <article class="topic-card"><span>04</span><h3>Sustainable Finance &amp; ESG</h3><p>Climate finance, development economics, impact measurement, sustainability reporting, and responsible financial systems.</p></article>
-          <article class="topic-card"><span>05</span><h3>Applied Research &amp; Policy Notes</h3><p>Structured assignment outputs that combine business logic, methods, discussion, and recommendations for real-world stakeholders.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="papers" id="papers">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="label">From Issue 01 · 2026</p>
-            <h2>The class assignment papers</h2>
-          </div>
-          <p class="section-copy short">A demonstration grid showing how C.A.S.E. publications can look once the archive is populated — faculty-screened, DOI-backed, open access, and ready to cite.</p>
-        </div>
-        <div class="paper-grid">
-          <article class="paper-card"><p class="paper-type">Working Paper 01</p><h3>Impact of Mobile Financial Services on Rural Financial Inclusion in Bangladesh</h3><p>Faculty-screened undergraduate coursework structured for publication with DOI, abstract, and citation-ready metadata.</p></article>
-          <article class="paper-card"><p class="paper-type">Working Paper 02</p><h3>SME Digital Payments Adoption and Trust Formation in Secondary Cities</h3><p>Applied business research connecting field realities with the institutional standards of scholarly communication.</p></article>
-          <article class="paper-card"><p class="paper-type">Working Paper 03</p><h3>Consumer Response to BNPL Models in Emerging Market Retail Ecosystems</h3><p>Class-based analytical work transformed into permanent public research for portfolio and academic visibility.</p></article>
-          <article class="paper-card"><p class="paper-type">Working Paper 04</p><h3>Cashless Campus Readiness: A Structured Assessment for University Operations</h3><p>Operational and policy-focused assignments can be surfaced in a cleaner publication format with lasting discoverability.</p></article>
-          <article class="paper-card"><p class="paper-type">Working Paper 05</p><h3>Undergraduate Dashboard Projects as Decision-Support Artifacts for Business Schools</h3><p>Analytics-heavy submissions can be reformatted as readable public records with clear authorship and supervision.</p></article>
-          <article class="paper-card"><p class="paper-type">Working Paper 06</p><h3>Designing a Low-Cost Editorial Workflow for Student Publishing in the Global South</h3><p>A model paper illustrating the editorial logic behind the C.A.S.E. initiative and its publishing infrastructure.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="masthead" id="masthead">
-      <div class="wrap">
-        <div class="section-head narrow-left">
-          <p class="label">Masthead</p>
-          <h2>Editorial Board</h2>
-          <p class="section-copy">The people who steward each assignment through review, formatting, metadata preparation, DOI registration, and public release.</p>
-        </div>
-        <div class="editor-grid">
-          <article class="editor-card"><h3>Faculty Editors</h3><p>Academic review, screening, and assignment-level quality control before publication approval.</p></article>
-          <article class="editor-card"><h3>Managing Editor</h3><p>Issue assembly, coordination, publication timelines, and template compliance across all accepted papers.</p></article>
-          <article class="editor-card"><h3>Metadata &amp; DOI Desk</h3><p>Author details, ORCID linkage, references, deposit preparation, and DOI registration under 10.67226.</p></article>
-          <article class="editor-card"><h3>Archive &amp; Platform</h3><p>PubPub archival presentation, issue-level frontend publishing, and public access quality assurance.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="workflow" id="workflow">
-      <div class="wrap">
-        <div class="section-head narrow-left">
-          <p class="label">How it works</p>
-          <h2>The C.A.S.E. workflow</h2>
-          <p class="section-copy">Frontend clarity, centralised metadata, DOI registration, and long-term discoverability — using the same structural publishing logic that already makes the broader CFSBR ecosystem look premium and credible.</p>
-        </div>
-        <div class="flow-grid">
-          <article class="flow-card"><span>01</span><h3>Internal Screening</h3><p>Faculty and editorial review determine whether the assignment is publication-worthy and template-compliant.</p></article>
-          <article class="flow-card"><span>02</span><h3>Frontend Preparation</h3><p>The issue landing page and publication surfaces are assembled on the C.A.S.E. site before archive release.</p></article>
-          <article class="flow-card"><span>03</span><h3>Metadata Collection</h3><p>Title, authors, abstract, references, ORCID, and thematic tags are packaged in a structured workflow.</p></article>
-          <article class="flow-card"><span>04</span><h3>Central Audit</h3><p>CFSBR validates metadata, checks licensing, and prepares the Crossref deposit and archive-ready record.</p></article>
-          <article class="flow-card"><span>05</span><h3>DOI Activation</h3><p>The paper goes live with a permanent DOI, PubPub archive record, and indexing-ready metadata footprint.</p></article>
-        </div>
-        <p class="workflow-foot">DOI prefix 10.67226 · Pattern case.[year].[issue].[serial]</p>
-      </div>
-    </section>
-
-    <section class="submission-cta">
-      <div class="wrap cta-box">
-        <div>
-          <p class="label light">Submissions open · Vol 01 · Issue 01</p>
-          <h2>Submit your assignment for C.A.S.E.</h2>
-          <p>A structured assignment using the official C.A.S.E. template, backed by faculty approval. The editorial team handles publication formatting, metadata preparation, ORCID support, DOI registration, and open-access archiving.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-green" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Template%20Request">Request Template</a>
-          <a class="btn btn-ghost" href="mailto:cfsbr@gmrafi.com.bd?subject=Partnership%20with%20C.A.S.E.">Partner with C.A.S.E.</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <img src="assets/cfsbr-seal.png" alt="CFSBR seal">
-        <div>
-          <strong>CFSBR C.A.S.E.</strong>
-          <p>Class Assignment Series · Edition<br>Permanent DOI-backed scholarly records for undergraduate coursework.</p>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#papers">Papers</a>
-        <a href="#workflow">Workflow</a>
-        <a href="https://case.pubpub.org/" target="_blank" rel="noopener">PubPub Archive ↗</a>
-        <a href="mailto:cfsbr@gmrafi.com.bd">cfsbr@gmrafi.com.bd</a>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-n">06</div><div class="hstat-l">Issues a Year</div></div>
+        <div class="hstat"><div class="hstat-n">02</div><div class="hstat-l">Publication Tiers</div></div>
+        <div class="hstat"><div class="hstat-n">01</div><div class="hstat-l">Inaugural Issue</div></div>
       </div>
     </div>
-    <div class="wrap cite-row">Cite as: <a href="https://case-cfsbr.vercel.app/" target="_blank" rel="noopener">case-cfsbr.vercel.app</a></div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Publisher band -->
+  <section class="pubband" aria-label="Publishing information">
+    <div class="pubband-inner">
+      <div class="pub-side">
+        <span class="pub-logo"><img src="assets/cfsbr-seal.png" alt="CFSBR"></span>
+        <div class="pub-text">
+          <span class="pub-eyebrow">Published by</span>
+          <span class="pub-name">Centre for Fintech &amp; Strategic Business Research</span>
+        </div>
+      </div>
+      <div class="pub-mid">
+        <span class="rule"></span>
+        <span>Under the CFSBR scholarly framework</span>
+        <span class="rule"></span>
+      </div>
+      <div class="pub-side pub-right">
+        <div class="pub-text right">
+          <span class="pub-eyebrow">DOI Registration</span>
+          <span class="pub-name">Crossref Member · Prefix 10.67226</span>
+        </div>
+        <span class="pub-logo"><img src="assets/crossref.png" alt="Crossref"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="narrow center">
+      <p class="eyebrow">About the Series</p>
+      <h2 class="h2">Where coursework becomes scholarship</h2>
+      <div class="headrule"></div>
+      <p class="lede">C.A.S.E. — the Class Assignment Series · Edition — is a bi-monthly student-edition scholarly series published by the Centre for Fintech &amp; Strategic Business Research.</p>
+      <div class="paras">
+        <p>Every semester, exceptional undergraduate assignments are written, graded, and forgotten. C.A.S.E. exists so that the best of them are not. The series captures end-of-semester work across fintech, strategy, analytics, and applied business research — and gives it a permanent, citable home.</p>
+        <p>Every accepted piece is reviewed by a faculty-led editorial board, paired with an ORCID iD, registered with a permanent Crossref DOI under prefix 10.67226, and hosted open access on PubPub under a CC BY-NC 4.0 license. Students leave each issue with a citable artifact for a CV, a graduate application, or a personal site.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scope -->
+  <section class="section surface" id="scope">
+    <div class="narrow-5 center-head">
+      <p class="eyebrow">Scope of the Series</p>
+      <h2 class="h2">What we publish</h2>
+      <div class="headrule"></div>
+      <p class="lede">C.A.S.E. publishes high-quality undergraduate coursework that is evidence-driven, clearly structured, and useful beyond the classroom — across the full CFSBR remit.</p>
+      <p class="mixline">40% Fintech &amp; Digital Finance · 30% Strategy &amp; Market Reports · 30% Analytics &amp; Sustainable Finance</p>
+      <ol class="scope-grid">
+        <li class="scope-card"><div class="scope-num">01</div><div class="scope-title">FinTech &amp; Digital Financial Services</div><p class="scope-desc">Digital payments, mobile financial services, financial inclusion, and the financial infrastructure of Bangladesh.</p></li>
+        <li class="scope-card"><div class="scope-num">02</div><div class="scope-title">Strategy &amp; Market Reports</div><p class="scope-desc">Industry analyses, strategic positioning, competitor reviews, market entry, and policy-linked business writing.</p></li>
+        <li class="scope-card"><div class="scope-num">03</div><div class="scope-title">Business Analytics &amp; Decision Intelligence</div><p class="scope-desc">Applied analytics, dashboards, survey-based reports, data interpretation, and managerial insight generation.</p></li>
+        <li class="scope-card"><div class="scope-num">04</div><div class="scope-title">Sustainable Finance &amp; ESG</div><p class="scope-desc">Climate finance, development economics, impact measurement, and responsible financial systems.</p></li>
+        <li class="scope-card"><div class="scope-num">05</div><div class="scope-title">Applied Research &amp; Policy Notes</div><p class="scope-desc">Structured assignment outputs combining business logic, methods, and recommendations for real stakeholders.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Papers -->
+  <section class="section surface" id="papers">
+    <div class="wide">
+      <div class="papers-head">
+        <div>
+          <p class="eyebrow">From Issue 01 · 2026</p>
+          <h2 class="h2">The class assignment papers</h2>
+        </div>
+        <p class="papers-note">Six faculty-screened, DOI-registered assignments from the inaugural cohort: editorially approved, open access, ready to cite.</p>
+      </div>
+
+      <div class="stats-strip">
+        <div class="sstat"><div class="sstat-n">06</div><div class="sstat-l">Papers</div></div>
+        <div class="sstat"><div class="sstat-n">12</div><div class="sstat-l">Authors</div></div>
+        <div class="sstat"><div class="sstat-n">01</div><div class="sstat-l">Series</div></div>
+        <div class="sstat"><div class="sstat-n">06</div><div class="sstat-l">DOIs Registered</div></div>
+      </div>
+
+      <!-- Featured -->
+      <a class="featured" href="https://case.pubpub.org/" target="_blank" rel="noopener">
+        <div class="feat-panel grad-sky">
+          <div class="feat-eyebrow">Featured</div>
+          <div class="feat-num">#001</div>
+          <div class="feat-issue">Issue 01</div>
+        </div>
+        <div class="feat-body">
+          <div class="chiprow">
+            <span class="chip chip-sky">Market Review</span>
+            <span class="chip chip-pick">Editor's Pick</span>
+            <span class="meta-mini">◷ 14 min</span>
+          </div>
+          <h3 class="feat-title">Impact of Mobile Financial Services on Rural Financial Inclusion in Bangladesh</h3>
+          <p class="feat-abstract">A specimen record demonstrating how a class assignment becomes a structured scholarly publication — abstract, keywords, references, and a registered DOI under the CFSBR prefix.</p>
+          <div class="feat-foot">
+            <span class="feat-authors">T. R. Ahmed et al.</span>
+            <span class="feat-meta"><span>⭳ 1,284</span><span>❝ 6</span><span class="read-link">Read →</span></span>
+          </div>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <div class="paper-grid">
+        <article class="pcard">
+          <div class="pcard-top grad-violet"><span>Assignment #002</span></div>
+          <div class="pcard-body">
+            <div class="chiprow"><span class="chip chip-violet">Case Study</span><span class="meta-mini">◷ 10 min</span><span class="meta-mini">▤ 13 pp</span></div>
+            <h3 class="pcard-title">SME Digital Payments Adoption and Trust Formation in Secondary Cities</h3>
+            <p class="pcard-abstract">Applied business research connecting field realities with the standards of scholarly communication.</p>
+            <div class="pcard-foot">
+              <div class="prow"><span class="pauthors">M. Choudhury, A. Rahman</span><span class="pcount">2 authors</span></div>
+              <div class="prow"><span class="pdoi">doi.org/10.67226/case.2026.01.002</span><span class="read-link">Read →</span></div>
+              <div class="prow prow-dim"><span>⭳ 812&nbsp;&nbsp;❝ Cited by 3</span><span class="plic">CC BY-NC 4.0</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top grad-emerald"><span>Assignment #003</span></div>
+          <div class="pcard-body">
+            <div class="chiprow"><span class="chip chip-emerald">Industry Brief</span><span class="meta-mini">◷ 9 min</span><span class="meta-mini">▤ 11 pp</span></div>
+            <h3 class="pcard-title">Consumer Response to BNPL Models in Emerging Market Retail Ecosystems</h3>
+            <p class="pcard-abstract">Class-based analytical work transformed into a permanent public research record.</p>
+            <div class="pcard-foot">
+              <div class="prow"><span class="pauthors">N. Sultana</span><span class="pcount">1 author</span></div>
+              <div class="prow"><span class="pdoi">doi.org/10.67226/case.2026.01.003</span><span class="read-link">Read →</span></div>
+              <div class="prow prow-dim"><span>⭳ 640&nbsp;&nbsp;❝ Cited by 2</span><span class="plic">CC BY-NC 4.0</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top grad-amber"><span>Assignment #004</span></div>
+          <div class="pcard-body">
+            <div class="chiprow"><span class="chip chip-amber">Policy Brief</span><span class="meta-mini">◷ 8 min</span><span class="meta-mini">▤ 9 pp</span></div>
+            <h3 class="pcard-title">Cashless Campus Readiness: A Structured Assessment for University Operations</h3>
+            <p class="pcard-abstract">Operational assignments surfaced in a cleaner publication format with lasting discoverability.</p>
+            <div class="pcard-foot">
+              <div class="prow"><span class="pauthors">M. Hassan et al.</span><span class="pcount">3 authors</span></div>
+              <div class="prow"><span class="pdoi">doi.org/10.67226/case.2026.01.004</span><span class="read-link">Read →</span></div>
+              <div class="prow prow-dim"><span>⭳ 503&nbsp;&nbsp;❝ Cited by 1</span><span class="plic">CC BY-NC 4.0</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top grad-sky"><span>Assignment #005</span></div>
+          <div class="pcard-body">
+            <div class="chiprow"><span class="chip chip-sky">Market Review</span><span class="meta-mini">◷ 12 min</span><span class="meta-mini">▤ 15 pp</span></div>
+            <h3 class="pcard-title">Undergraduate Dashboard Projects as Decision-Support Artifacts for Business Schools</h3>
+            <p class="pcard-abstract">Analytics-heavy submissions reformatted as readable public records with clear authorship.</p>
+            <div class="pcard-foot">
+              <div class="prow"><span class="pauthors">R. Iqbal, S. Karim</span><span class="pcount">2 authors</span></div>
+              <div class="prow"><span class="pdoi">doi.org/10.67226/case.2026.01.005</span><span class="read-link">Read →</span></div>
+              <div class="prow prow-dim"><span>⭳ 447&nbsp;&nbsp;❝ Cited by 2</span><span class="plic">CC BY-NC 4.0</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="pcard-top grad-violet"><span>Assignment #006</span></div>
+          <div class="pcard-body">
+            <div class="chiprow"><span class="chip chip-violet">Case Study</span><span class="meta-mini">◷ 11 min</span><span class="meta-mini">▤ 12 pp</span></div>
+            <h3 class="pcard-title">Designing a Low-Cost Editorial Workflow for Student Publishing in the Global South</h3>
+            <p class="pcard-abstract">A model paper illustrating the editorial logic behind the C.A.S.E. initiative itself.</p>
+            <div class="pcard-foot">
+              <div class="prow"><span class="pauthors">A. Mahmud</span><span class="pcount">1 author</span></div>
+              <div class="prow"><span class="pdoi">doi.org/10.67226/case.2026.01.006</span><span class="read-link">Read →</span></div>
+              <div class="prow prow-dim"><span>⭳ 389&nbsp;&nbsp;❝ Cited by 4</span><span class="plic">CC BY-NC 4.0</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial board -->
+  <section class="section" id="board">
+    <div class="narrow-5 center-head">
+      <p class="eyebrow">Masthead</p>
+      <h2 class="h2">Editorial Board</h2>
+      <div class="headrule"></div>
+      <p class="lede">The faculty and student editors who steward every submission through review and registration. No anonymous gatekeeping: every approval is signed.</p>
+      <div class="board-grid">
+        <div class="board-card"><div class="board-avatar grad-sky"><span>TR</span></div><div class="board-info"><h3>Dr. Tahmid Rahman</h3><p>Faculty Editor-in-Chief</p></div></div>
+        <div class="board-card"><div class="board-avatar grad-indigo"><span>SK</span></div><div class="board-info"><h3>Dr. Sabrina Karim</h3><p>Associate Faculty Editor</p></div></div>
+        <div class="board-card"><div class="board-avatar grad-cyan"><span>AM</span></div><div class="board-info"><h3>Adib Mahmud</h3><p>Managing Student Editor</p></div></div>
+        <div class="board-card"><div class="board-avatar grad-violet2"><span>RI</span></div><div class="board-info"><h3>Rumana Iqbal</h3><p>Reviews Editor</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section class="section surface" id="workflow">
+    <div class="narrow-5 center-head">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2">The C.A.S.E. workflow</h2>
+      <div class="headrule"></div>
+      <p class="lede">Editorial clarity, centralised ingestion. The series owns its branding and hosting; CFSBR runs the metadata pipeline and Crossref deposit.</p>
+      <ol class="flow-grid">
+        <li class="flow-card"><div class="flow-num">01</div><div class="flow-label">Internal Screening</div><p class="flow-desc">The editorial team reviews the draft; a faculty advisor signs the approval letter.</p></li>
+        <li class="flow-card"><div class="flow-num">02</div><div class="flow-label">Frontend Deployment</div><p class="flow-desc">The issue landing page goes live on the C.A.S.E. front-end before archive release.</p></li>
+        <li class="flow-card"><div class="flow-num">03</div><div class="flow-label">Metadata Collection</div><p class="flow-desc">Title, authors, ORCID, abstract, and references are packaged for ingestion.</p></li>
+        <li class="flow-card"><div class="flow-num">04</div><div class="flow-label">Central Audit</div><p class="flow-desc">CFSBR validates metadata, runs the deposit build, and queues for Crossref.</p></li>
+        <li class="flow-card"><div class="flow-num">05</div><div class="flow-label">DOI Activation</div><p class="flow-desc">A permanent DOI is registered and resolves to the PubPub archive record.</p></li>
+      </ol>
+      <p class="doi-line">DOI prefix 10.67226 · Pattern case.[year].[issue].[serial]</p>
+    </div>
+  </section>
+
+  <!-- Submit CTA -->
+  <section class="section" id="submit">
+    <div class="narrow-5">
+      <div class="cta-box">
+        <p class="cta-eyebrow">Submissions open · Issue 01</p>
+        <h2 class="cta-title">Submit your assignment for Issue 01</h2>
+        <p class="cta-copy">A structured assignment on the official C.A.S.E. template plus a faculty approval letter. We handle DOI, ORCID, and open-access hosting.</p>
+        <a class="btn btn-white" href="mailto:cfsbr@gmrafi.com.bd?subject=C.A.S.E.%20Submission%20—%20Vol%201%20Issue%201">Submit Assignment →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="coop-panel">
+      <p class="coop-eyebrow">Published under the CFSBR scholarly framework</p>
+      <div class="coop-grid">
+        <div class="coop-unit">
+          <span class="pub-logo"><img src="assets/cfsbr-seal.png" alt="CFSBR"></span>
+          <div class="coop-text"><div class="coop-name">CFSBR</div><div class="coop-role">Publisher</div></div>
+        </div>
+        <div class="coop-unit">
+          <span class="pub-logo"><img src="assets/cfsbr-seal.png" alt="C.A.S.E."></span>
+          <div class="coop-text"><div class="coop-name">C.A.S.E.</div><div class="coop-role">Series front-end</div></div>
+        </div>
+        <div class="coop-unit">
+          <span class="pub-logo"><img src="assets/crossref.png" alt="Crossref"></span>
+          <div class="coop-text"><div class="coop-name">Crossref</div><div class="coop-role">DOI registrant · 10.67226</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="pub-logo sm"><img src="assets/cfsbr-seal.png" alt="CFSBR"></span>
+          <div><div class="coop-name">CFSBR C.A.S.E.</div><div class="foot-sub">Class Assignment Series · Edition</div></div>
+        </div>
+        <p class="foot-blurb">A faculty-governed, DOI-registered series for undergraduate coursework. Permanent records, open access, portfolio-ready citations.</p>
+        <p class="foot-mono">Prefix 10.67226 · Vol 01 · 2026</p>
+      </div>
+      <div>
+        <h4 class="foot-h">Explore</h4>
+        <ul class="foot-list">
+          <li><a href="#papers">Issue 01 Papers</a></li>
+          <li><a href="#board">Masthead</a></li>
+          <li><a href="#about">About the Series</a></li>
+          <li><a href="#submit">Submit</a></li>
+          <li><a href="https://case.pubpub.org/" target="_blank" rel="noopener">PubPub Archive ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="foot-h">Editorial Office</h4>
+        <ul class="foot-list">
+          <li><a href="mailto:cfsbr@gmrafi.com.bd">cfsbr@gmrafi.com.bd</a></li>
+          <li>Centre for Fintech &amp; Strategic Business Research</li>
+          <li>Rolling editorial review</li>
+        </ul>
+        <div class="foot-chips">
+          <span>CC BY-NC 4.0</span><span>DOI 10.67226</span><span>PubPub</span><span>ORCID</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-base">
+      <span>© 2026 CFSBR · C.A.S.E. — Class Assignment Series · Edition</span>
+      <span>Archived on PubPub · Co-published under the CFSBR framework</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

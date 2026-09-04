@@ -1,6 +1,42 @@
-// CFSBR C.A.S.E. — interactions
+// CFSBR C.A.S.E. — interactions (1:1 with the original CCPM portal behaviour)
 (function () {
   "use strict";
+
+  // Marquee items — same list as the original portal
+  var items = [
+    "Assignment Series",
+    "Peer Review",
+    "DOI Registry",
+    "ORCID Verified",
+    "Open Access",
+    "Faculty Approved",
+    "Citation Export",
+    "Bi-Monthly Issue"
+  ];
+  var track = document.getElementById("marqueeTrack");
+  if (track) {
+    var html = "";
+    // 4 loops, exactly like the original
+    for (var r = 0; r < 4; r++) {
+      items.forEach(function (label) {
+        html += '<span class="mq-item">' + label + '<span class="mq-star">★</span></span>';
+      });
+    }
+    track.innerHTML = html;
+  }
+
+  // Prototype banner dismiss
+  var banner = document.getElementById("protoBanner");
+  var close = document.getElementById("protoClose");
+  if (banner && close) {
+    try {
+      if (localStorage.getItem("case-banner-dismissed") === "1") banner.remove();
+    } catch (e) {}
+    close.addEventListener("click", function () {
+      banner.remove();
+      try { localStorage.setItem("case-banner-dismissed", "1"); } catch (e) {}
+    });
+  }
 
   // Mobile nav toggle
   var toggle = document.getElementById("navToggle");
@@ -16,25 +52,5 @@
         toggle.setAttribute("aria-expanded", "false");
       });
     });
-  }
-
-  // Scroll reveal
-  var targets = document.querySelectorAll(
-    ".pillar-card, .paper-card, .flow-card, .about-inner, .cover-card, .hero-copy, .scope-copy, .scope-bars, .cta-inner"
-  );
-  targets.forEach(function (el) { el.classList.add("reveal"); });
-
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    targets.forEach(function (el) { io.observe(el); });
-  } else {
-    targets.forEach(function (el) { el.classList.add("in"); });
   }
 })();
