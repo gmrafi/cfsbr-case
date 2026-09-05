@@ -126,7 +126,7 @@ border-bottom:1px solid var(--border);}
 .hero-meta b{font-weight:700}
 .hero-meta .dot{color:var(--border)}
 .hero-title{
-  margin-top:12px;text-align:center;
+  margin-top:12px;text-align:center;display:flex;flex-direction:column;align-items:center;
   font-family:var(--font-display);font-weight:700;color:var(--primary);
   font-size:clamp(2.2rem,5vw,3.6rem);line-height:.95;letter-spacing:-.02em;font-weight:700;
 }
@@ -147,12 +147,12 @@ border-bottom:1px solid var(--border);}
   margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;
 }
 .hero-stats{
-  margin:20px auto 0;max-width:36rem;
-  display:grid;grid-template-columns:repeat(3,1fr);
-  border:1px solid var(--border);border-radius:12px;padding:10px 0;
-  text-align:center;
+  margin:24px auto 0;max-width:46rem;list-style:none;padding:0;
+  display:flex;flex-direction:row;align-items:stretch;
+  border:1px solid var(--border);border-radius:14px;overflow:hidden;
+  background:#fff;text-align:center;
 }
-.hstat{padding:0 12px}
+.hstat{flex:1 1 0;padding:22px 18px 20px;display:flex;flex-direction:column;justify-content:center;gap:8px;min-width:0}
 .hstat + .hstat{border-left:1px solid var(--border)}
 .hstat-n{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--primary)}
 .hstat-l{
@@ -744,3 +744,13 @@ border-bottom:1px solid var(--border);}
 .ribbon-bar .rb-c4{background:var(--palette-red);flex:1}
 .ribbon-bar .rb-c5{background:var(--palette-grey);flex:.8}
 .eyebrow-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:linear-gradient(180deg,#005f83 0%,#1f6f74 100%);color:#fff;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;box-shadow:0 6px 16px rgba(0,95,131,.20)}
+
+.hero-title-squiggle{display:block;width:100%;max-width:15rem;height:14px;margin:6px auto 0;color:var(--primary);opacity:.92}
+.hstat-noapc .hstat-n{font-size:22px;letter-spacing:.01em;text-transform:none;font-family:var(--font-display)}
+.hstat-noapc .hstat-l{letter-spacing:.22em}
+.hero-stats .hstat-n{line-height:1.05}
+@media(max-width:640px){
+  .hero-stats{flex-direction:column}
+  .hstat + .hstat{border-left:none;border-top:1px solid var(--border)}
+  .hero-title-squiggle{max-width:11rem;height:11px}
+}
