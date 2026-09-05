@@ -1,0 +1,11 @@
+{
+  "title": "A Test Publication",
+  "doi": "10.67226/TEST.001",
+  "resource_url": "https://case.pubpub.org/pub/urbkky68/release/1",
+  "authors": [
+    {"given": "Md", "surname": "Author", "orcid": ""}
+  ],
+  "abstract": "Demo abstract for the CFSBR C.A.S.E. crossref deposit.",
+  "month": 7,
+  "day": 15
+}
