@@ -1,13 +1,14 @@
 {
-  "name": "CFSBR C.A.S.E. - Class Assignment Series: Edition",
+  "name": "CFSBR C.A.S.E.",
   "short_name": "C.A.S.E.",
+  "description": "Class Assignment Series: Edition — faculty-governed, DOI-registered, diamond open access.",
   "start_url": "/",
-  "display": "minimal-ui",
+  "scope": "/",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#005f83",
   "icons": [
-    {"src": "/assets/favicon-32.png", "sizes": "32x32", "type": "image/png"},
-    {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/assets/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
     {"src": "/assets/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
   ]
 }
